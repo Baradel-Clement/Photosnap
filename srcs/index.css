@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400');
+
+:root {
+    --main-accent: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
+    --black: #000000;
+    --grey: #DFDFDF;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+input,
+textarea,
+button,
+select,
+a, div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+html, body {
+    font-family: 'DM Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 100%;
+    margin: 0px;
+}
+
+#hero {
+    position: absolute;
+    margin: 72px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-row:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.text-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42.46vw;
+    font-family: 'DM Sans';
+    color: white;
+    height: 650px;
+    background-color: black;
+}
+
+.hero-row:nth-child(2) .text-side, .hero-row:nth-child(3) .text-side {
+    color: black;
+    background-color: white;
+}
+
+.wrap-text-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 54px;
+    align-items: center;
+    padding-left: 54px;
+}
+
+.wrap-text-side h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.166666507720947px;
+    max-width: 387px;
+}
+
+.wrap-text-side p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: var(--grey);
+    text-align: left;
+    opacity: 0.6;
+    max-width: 400px;
+    margin-top: 21px;
+    margin-bottom: 48px;
+}
+
+.hero-row:nth-child(2) .wrap-text-side p, .hero-row:nth-child(3) .wrap-text-side p{
+    color: black;
+}
+
+.button-gai--black {
+    color: black;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.button-gai {
+    font-size: 12px;
+    letter-spacing: 2px;
+    align-items: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 387px;
+    text-decoration: none;
+}
+
+.button-gai:hover {
+    text-decoration: underline;
+}
+
+.button-gai--white {
+    color: white;
+}
+
+.button-gai::after {
+    content: ' ';
+    width: 42px;
+    height: 14px;
+    background-size: cover;
+    margin-left: 25px;
+    transition: 0.1s ease-in-out;
+}
+
+.button-gai:hover::after {
+    margin-left: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.button-gai--white::after {
+    background-image: url(../assets/shared/desktop/arrow-white.svg);
+}
+
+.button-gai--black::after {
+    background-image: url(../assets/shared/desktop/arrow.svg);
+}
+
+.first-text-side::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    width: 6px;
+    height: 304px;
+    background: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
+}
+
+.picture_side {
+    width: 57.54vw;
+    height: 650px;
+    background-image: url(../assets/home/desktop/create-and-share.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.hero-row:nth-child(2) .picture_side {
+    background-image: url(../assets/home/desktop/beautiful-stories.jpg);
+    background-position: left;
+}
+
+.hero-row:nth-child(3) .picture_side {
+    background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
+    background-position: top;
+}
+
+@media screen and (max-width:1138px) {
+    .text-side {
+        width: 64.453125vw;
+    }
+
+    .picture_side {
+        width: 35.546875vw;
+        background-image: url(../assets/home/tablet/create-and-share.jpg);
+    }
+
+    .hero-row:nth-child(2) .picture_side {
+        background-image: url(../assets/home/tablet/beautiful-stories.jpg);
+    }
+
+    .hero-row:nth-child(3) .picture_side {
+        background-image: url(../assets/home/tablet/designed-for-everyone.jpg);
+    }
+}
+
+
+#home-cards {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: row;
+    flex-flow: row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 0px;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:first-child {
+    background-image: url(../assets/stories/desktop/mountains.jpg);
+}
+
+.card:nth-child(2) {
+    background-image: url(../assets/stories/desktop/cityscapes.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: url(../assets/stories/desktop/18-days-voyage.jpg);
+}
+
+.card:last-child {
+    background-image: url(../assets/stories/desktop/architecturals.jpg);
+}
+
+.card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-30px);
+}
+
+.card::before {
+    content: '';
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    background-image: linear-gradient(27deg, #FFC593 0%, #BC7198 49%, #5A77FF 95%);
+}
+
+.card:hover::before {
+    height: 8px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(27deg, #FFC593 0%, #BC7198 49%, #5A77FF 95%);
+}
+
+
+.footer-card {
+    max-width: 77.777778%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto 30px auto;
+}
+
+.card-desc {
+    border-bottom: 1px solid white;
+}
+
+.card-desc p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.card-desc p:last-child {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.footer-card a:last-child  {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    margin-top: 16px;
+}
+
+.footer-card a:last-child::after {
+    content: '';
+    position: relative;
+    z-index: 90;
+    display: block;
+    background-image: url(../assets/shared/desktop/arrow-white.svg);
+    width: 42px;
+    height: 12px;
+}
+
+
+@media screen and (max-width:1024px) {
+    #home-cards {
+        height: 1000px;
+    }
+    
+    .cards {
+        flex-flow: row wrap;
+        height: 1000px;
+        cursor: pointer;
+    }
+    
+    .card {
+        display: flex;
+        flex: 0 1 50%;
+    }
+}
+
+@media screen and (max-width:669px) {
+    .first-row {
+        flex-direction: column-reverse !important;
+    }
+    
+    .hero-row {
+        flex-direction: column;
+    }
+
+    .hero-row:nth-child(2), .hero-row:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .picture_side {
+        background-image: url(../assets/home/mobile/create-and-share.jpg);
+        height: 294px;
+        width: 100%;
+    }
+
+    .hero-row:nth-child(2) .picture_side{
+        background-image: url(../assets/home/mobile/beautiful-stories.jpg);
+    }
+
+    .hero-row:nth-child(3) .picture_side {
+        background-image: url(../assets/home/mobile/designed-for-everyone.jpg);
+    }
+
+    .text-side {
+        width: 100%;
+        height: 419px;
+    }
+
+    .wrap-text-side {
+        padding-right: 24px;
+        padding-left: 33px;
+        margin: 0px;
+    }
+
+    .wrap-text-side h1 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+        max-width: 83%;
+    }
+    
+    .wrap-text-side p {
+        width: 100%;
+        max-width: 83%;
+        margin-bottom: 24px;
+        margin-top: 12px;
+    }
+
+    .button-gai {
+        width: 100%;
+        max-width: 83%;
+    }
+
+    .first-text-side::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 295px;
+        left: 15%;
+        width: 128px;
+        height: 6px;
+    }
+
+    .card:first-child {
+        background-image: url(../assets/stories/mobile/mountains.jpg);
+    }
+    
+    .card:nth-child(2) {
+        background-image: url(../assets/stories/mobile/cityscapes.jpg);
+    }
+    
+    .card:nth-child(3) {
+        background-image: url(../assets/stories/mobile/18-days-voyage.jpg);
+    }
+    
+    .card:last-child {
+        background-image: url(../assets/stories/mobile/architecturals.jpg);
+    }
+
+    #home-cards {
+        height: 1500px;
+    }
+    
+    .cards {
+        flex-wrap: wrap;
+        flex-flow: column ;
+        height: 1500px;
+    }
+    
+    .card {
+        height: 375px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        flex: 0 1 100%;
+    }
+}
+
+#home-features {
+    width: 100%;
+    background-color: white;
+    height: 476px;
+}
+
+.features-cards {
+    max-width: 1110px;
+    height: 236px;
+    width: 100%;
+    margin: 120px auto 120px auto;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-card {
+    display: flex;
+    flex: 0 1 350px;
+    height: 236px;
+    color: black;
+    line-height: 25px;
+    font-family: 'DM Sans';
+    letter-spacing: 0px;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-card img {
+    width: 72px;
+    height: 72px;
+}
+
+.feature-card:nth-child(2) img {
+    height: 36px;
+    margin: 13px 0px 13px 0px;
+}
+
+.feature-card p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    height: 25px;
+}
+
+.feature-card p:last-child {
+    height: 75px;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1024px) {
+    #home-features {
+        height: 1015px;
+    }
+    
+    .features-cards {
+        max-width: 457px;
+        height: 775px;
+        flex-flow: column nowrap;
+    }
+    
+    .feature-card {
+        display: flex;
+        flex: 0 1 211px;
+        height: 236px;
+        width: 457px;
+        flex-flow: column nowrap;
+    }
+    
+    .feature-card:nth-child(2) img {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    #home-features {
+        height: 1015px;
+    }
+
+    .features-cards {
+        max-width: unset;
+        width: 98%;
+        height: 775px;
+        flex-flow: column nowrap;
+    }
+
+    .feature-card {
+        display: flex;
+        flex: 0 1 211px;
+        height: 236px;
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+
+    .feature-card:nth-child(2) img {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400');
+
+#footer {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.wrap-footer {
+    width: 100%;
+    max-width: 1104px;
+    height: 122px;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foooter-card {
+    width: 170px;
+    height: 121px;
+}
+
+.footer-logo-social {
+    flex: 0 1 17%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.footer-logo-social img {
+    width: 170px;
+    height: 16px;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    width: 154px;
+    height: 21px;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.16s ease-in-out;
+}
+
+.social-icon-facebook {
+    background-image: url(../../assets/shared/desktop/facebook-white.svg);
+}
+
+.social-icon-youtube {
+    background-image: url(../../assets/shared/desktop/youtube-white.svg);
+}
+
+.social-icon-twitter {
+    background-image: url(../../assets/shared/desktop/twitter-white.svg);
+}
+
+.social-icon-pinterest {
+    background-image: url(../../assets/shared/desktop/pinterest-white.svg);
+}
+
+.social-icon-insta {
+    background-image: url(../../assets/shared/desktop/insta-white.svg);
+}
+
+.social-icon-facebook:hover {
+    background-image: url(../../assets/shared/desktop/facebook-color.svg);
+}
+
+.social-icon-youtube:hover {
+    background-image: url(../../assets/shared/desktop/youtube-color.svg);
+}
+
+.social-icon-twitter:hover {
+    background-image: url(../../assets/shared/desktop/twitter-color.svg);
+}
+
+.social-icon-pinterest:hover {
+    background-image: url(../../assets/shared/desktop/pinterest-color.svg);
+}
+
+.social-icon-insta:hover {
+    background-image: url(../../assets/shared/desktop/insta-color.svg);
+}
+
+.footer-nav {
+    flex: 0 1 7%;
+    margin-right: 220px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav-item {
+    height: 16px;
+    display: flex;
+}
+
+.footer-nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 16px;
+    font-size: 12px;
+    transition: 0.15s ease-in-out;
+    opacity: 1;
+}
+
+.footer-nav-link:hover {
+    opacity: 0.3;
+    transition: 0.15s ease-in-out;
+}
+
+.footer-invite {
+    flex: 0 1 40%;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-button {
+    width: 100%;
+    max-width: 174px !important;
+}
+
+.footer-invite p {
+    width: 100%;
+    max-width: 255px;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;    
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    #footer {
+        height: 284px;
+    }
+    
+    .wrap-footer {
+        max-width: 89.71354167%;
+        height: 156px;
+    }
+    
+    .footer-logo-social {
+        height: 156px;
+    }
+    
+    .footer-nav {
+        flex: 0 1 313px;
+        margin-right: 0px;
+        position: absolute;
+        flex-flow: row nowrap;
+        width: 100%;
+        max-width: 313px;
+        margin-bottom: 35px;
+    }
+    
+    .footer-nav-item:first-child {
+        width: 42px;
+    }
+
+    .footer-nav-item:nth-child(2) {
+        width: 61px;
+    }
+
+    .footer-nav-item:nth-child(3) {
+        width: 72px;
+    }
+
+    .footer-nav-item:last-child {
+        width: 60px;
+    }
+
+    .footer-invite {
+        height: 156px;
+    }
+
+}
+
+@media screen and (max-width:629px) {
+    #footer {
+        height: 539px;
+    }
+
+    .wrap-footer {
+        flex-flow: column nowrap;
+        width: 100%;
+        max-width: 82.66666667%;
+        height: 427px;
+    }
+
+    .footer-logo-social {
+        flex: 0 1 68px;
+        width: 170px;
+        height: 68px;
+        margin: auto;
+        margin-bottom: 40px !important;
+
+    }
+
+    .footer-social {
+        width: 170px;
+    }
+
+    .footer-nav {
+        width: 100%;
+        max-width: 82px;
+        height: 121px;
+        text-align: center;
+        flex-flow: column nowrap;
+        position: relative;
+        flex: 0 1 121px;
+        margin-bottom: 40px !important;
+    }
+
+    .footer-invite {
+        width: 255px;
+        height: 70px;
+        flex: 0 1 70px;
+        margin: auto;
+    }
+
+    .footer-button {
+        margin-right: 30px;
+    }
+}
