@@ -53,6 +53,6 @@ As my first projects using HTML & CSS i learned a lot with flexbox, and position
 
 ## Author
 
-- Website - SOON
-- Frontend Mentor - [@Koyazh](https://www.frontendmentor.io/profile/Koyazh)
+- Website - [Clément Baradel](http://baradelclement.com/)
 - Linkedin - [BaradelClément](https://www.linkedin.com/in/cl%C3%A9ment-baradel-330460209)
+- Frontend Mentor - [@Koyazh](https://www.frontendmentor.io/profile/Koyazh)
